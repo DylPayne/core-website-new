@@ -1,0 +1,171 @@
+.body {
+  padding: 0 50px 0;
+}
+
+.header {
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: black; */
+}
+
+.logoContainer {
+  position: relative;
+  padding: 10px;
+}
+.logoContainer:hover {
+  cursor: pointer;
+  background-color: rgb(244, 244, 244);
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+  position: relative;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+}
+.contactContainerMobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.contactUs {
+  background-color: rgb(170, 16, 0);
+  padding: 15px 25px;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+.contactUs:hover {
+  background-color: rgb(98, 10, 0);
+}
+
+.contactIcon {
+  color: rgb(170, 16, 0);
+  margin: 0 10px;
+}
+.contactIcon:hover {
+  color: rgb(98, 10, 0);
+}
+.contactIconMobile {
+  color: rgb(170, 16, 0);
+  margin: 5px 15px;
+  font-size: 30px;
+}
+.contactIconMobile:hover {
+  color: rgb(98, 10, 0);
+}
+
+.linksContainer ul {
+  list-style: none;
+}
+
+.linksContainer li {
+  display: inline-block;
+  padding: 20px;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.linksContainer li *:hover {
+  color: black;
+}
+
+.openMenu {
+  display: none;
+}
+
+.menuContainerOpen {
+  display: none;
+  border-bottom: 1px solid rgb(162, 162, 162);
+  color: gray;
+}
+.menuContainerOpen li *:hover {
+  color: black;
+}
+.menuContainerOpen ul {
+  list-style: none;
+  text-align: center;
+}
+.menuContainerOpen li {
+  padding: 15px;
+}
+.menuContainerClosed {
+  display: none;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 40px 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.linksContainerFooter ul {
+  list-style: none;
+}
+
+.linksContainerFooter li {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.linksContainerFooter li *:hover {
+  color: black;
+}
+
+/* Responsive design ------------------- */
+
+/* Mobile */
+@media only screen and (max-width: 1100px) {
+  .linksContainer {
+    display: none;
+  }
+  .contactContainer {
+    display: none;
+  }
+  .body {
+    padding: 0 25px 0;
+  }
+  .logo {
+    width: 200px;
+  }
+  .header {
+    height: 100px;
+  }
+  .openMenu {
+    display: block;
+    color: gray;
+  }
+  .openMenu:hover {
+    color: black;
+  }
+  .menuContainerOpen {
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+.spacerM {
+  height: 75px;
+}
+.spacerXS {
+  height: 25px;
+}
+
+.boardStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.workLink {
+  color: white;
+  background-color: rgb(170, 16, 0);
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.workLink:hover {
+  background-color: rgb(98, 10, 0);
+}
+
+.contactContainer {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactContent p {
+  color: gray;
+}

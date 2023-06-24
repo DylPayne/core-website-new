@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.aboutText {
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutText {
+    padding: 0 0;
+  }
+}
