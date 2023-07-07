@@ -117,7 +117,11 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.whatWeDoImage}>
-            <Image src={coverPhoto} className={styles.gridItemImage} alt="What we do" />
+            <Image
+              src={coverPhoto}
+              className={styles.gridItemImage}
+              alt="What we do"
+            />
           </div>
         </div>
       </div>
@@ -129,7 +133,7 @@ export default function Home() {
           <div className={styles.partnerGrid}>
             {partnerLogos.map((partner) => {
               return (
-                <div className={styles.partnerGridItem}>
+                <div className={styles.partnerGridItem} key={partner.alt}>
                   <Image
                     src={partner.src}
                     alt={partner.alt}
