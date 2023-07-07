@@ -18,7 +18,9 @@ import logoWhite from "../public/core_logo_white.png";
 
 import styles from "./layout.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { MantineProvider } from "@mantine/core";
+
+import { createGetInitialProps } from "@mantine/next";
 
 // export const metadata = {
 //   title: "Core Interiors | Cape Town",
@@ -28,11 +30,13 @@ const inter = Inter({ subsets: ["latin"] });
 const links = [
   { label: "About", link: "/about" },
   { label: "Our Work", link: "/portfolio" },
-  { label: "Testimonials", link: "/about" },
-  { label: "Team", link: "/about" },
+  { label: "Testimonials", link: "/testimonials" },
+  // { label: "Team", link: "/team" },
 ];
 
 export default function RootLayout({ children }) {
+  const getInitialProps = createGetInitialProps();
+
   // Opening and closing menu
   const [menuState, setMenuState] = useState(styles.menuContainerClosed);
   const handleMenuClick = () => {
@@ -49,9 +53,15 @@ export default function RootLayout({ children }) {
     router.push("/");
   };
 
+  // hi there my name is dylan and i am testing this keyboard
+
   return (
     <html lang="en">
+      {/* <MantineProvider> */}
       <body className={styles.body}>
+        <div className={styles.workInProgress}>
+          <p>Site under construction</p>
+        </div>
         <header className={styles.header}>
           {/* LOGO --------------------------- */}
           <div
@@ -102,11 +112,11 @@ export default function RootLayout({ children }) {
             </button>
           </div>
         </header>
-        <div className={menuState}>
+        <div className={menuState} onClick={handleMenuClick}>
           <ul>
             {links.map((link) => {
               return (
-                <li key={link.link}>
+                <li key={link.label}>
                   <Link href={link.link}>{link.label}</Link>
                 </li>
               );
@@ -167,6 +177,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
       </body>
+      {/* </MantineProvider> */}
     </html>
   );
 }

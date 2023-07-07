@@ -11,8 +11,8 @@
 }
 
 .gridItemImage {
-  max-width: 100%;
-  max-height: 300px;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 .gridItem {
@@ -52,11 +52,50 @@
   background-color: black;
 }
 
+.jobViewImageParent {
+  display: flex;
+  justify-content: center;
+}
+.jobViewImage {
+  width: 75%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.descParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desc {
+  max-width: 800px;
+}
+
+.galleryParent {
+  /* border: 1px solid black; */
+  display: grid;
+  gap: 40px;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+.galleryImageParent {
+  /* border: 1px solid red; */
+}
+.galleryImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
 /* Responsive design ------------------- */
 
 /* Tablet */
 @media only screen and (max-width: 1100px) {
   .gridParent {
+    grid-template-columns: auto auto;
+  }
+  .galleryParent {
     grid-template-columns: auto auto;
   }
 }
@@ -68,5 +107,13 @@
   }
   .gridItemImage {
     height: 200px;
+  }
+  .jobViewImage {
+    width: 100%;
+  }
+  .galleryParent {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
   }
 }

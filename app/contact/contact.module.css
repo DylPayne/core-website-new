@@ -1,0 +1,50 @@
+.formContainer {
+  display: flex;
+  border: 2px solid rgb(242, 242, 242);
+  /* padding: 20px; */
+  min-width: 80%;
+  align-items: stretch;
+}
+
+.formInfo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+  background-color: rgb(242, 242, 242);
+}
+.formInfoRowParent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 10px;
+}
+.formInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.formInfoRowLabel {
+  color: gray;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .formInfo {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+}

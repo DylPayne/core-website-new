@@ -4,6 +4,29 @@
   margin-bottom: 30px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.spacerXL {
+  height: 150px;
+}
+.spacerL {
+  height: 100px;
+}
+.spacerM {
+  height: 75px;
+}
+.spacerS {
+  height: 50px;
+}
+.spacerXS {
+  height: 25px;
+}
+
 /* Responsive design ------------------- */
 
 /* Mobile */

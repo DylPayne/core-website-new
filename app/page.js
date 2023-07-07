@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import styles from "./page.module.css";
+import sharedStyles from "./sharedStyles.module.css";
 
 import Contact from "@/components/contact";
 
@@ -32,6 +33,7 @@ export default function Home() {
       <div className={styles.cover}>
         <div className={styles.coverTextContainer}>
           <h1>We Create Spaces that Inspire</h1>
+          <div className={sharedStyles.spacerXS} />
           <Link href="/portfolio" className={styles.workLink}>
             Our Work
           </Link>
@@ -60,7 +62,11 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.whatWeDoImage}>
-            <Image src={coverPhoto} className={styles.gridItemImage} />
+            <Image
+              src={coverPhoto}
+              className={styles.gridItemImage}
+              alt="What we do"
+            />
           </div>
         </div>
         <div className={styles.spacerM} />
@@ -68,7 +74,11 @@ export default function Home() {
           className={`${styles.whatWeDoContainer} ${styles.reverseColTablet}`}
         >
           <div className={styles.whatWeDoImage}>
-            <Image src={coverPhoto} className={styles.gridItemImage} />
+            <Image
+              src={coverPhoto}
+              className={styles.gridItemImage}
+              alt="What we do"
+            />
           </div>
           <div className={styles.whatWeDoText}>
             <h3>Bathrooms</h3>
@@ -107,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.whatWeDoImage}>
-            <Image src={coverPhoto} className={styles.gridItemImage} />
+            <Image src={coverPhoto} className={styles.gridItemImage} alt="What we do" />
           </div>
         </div>
       </div>

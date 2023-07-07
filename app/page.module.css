@@ -172,6 +172,7 @@
   }
   .partnerGrid {
     grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 }
 
@@ -182,6 +183,7 @@
   }
   .partnerGrid {
     grid-template-columns: auto auto;
+    justify-content: center;
   }
   .partnerGridItem {
     width: 150px;

@@ -139,6 +139,14 @@
   color: black;
 }
 
+.workInProgress {
+  background-color: rgb(219, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 5px dashed orange;
+}
+
 /* Responsive design ------------------- */
 
 /* Mobile */
@@ -167,5 +175,11 @@
   }
   .menuContainerOpen {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .linksContainerFooter li {
+    display: none;
   }
 }
