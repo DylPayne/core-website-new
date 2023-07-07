@@ -113,6 +113,7 @@ export default function PortfolioDetail({ params }) {
                       height={0}
                       sizes="100vw"
                       className={styles.galleryImage}
+                      key={jobData.name}
                     />
                   </div>
                 );
