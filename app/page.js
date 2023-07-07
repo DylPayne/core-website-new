@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Head from "next/head";
 import Link from "next/link";
 
 import styles from "./page.module.css";
@@ -7,24 +6,26 @@ import sharedStyles from "./sharedStyles.module.css";
 
 import Contact from "@/components/contact";
 
-import coverPhoto from "../public/kitchen1.jpeg";
+import kitchenPhoto from "../public/kitchen1.jpeg";
+import bathroomPhoto from "../public/bathroom1.jpeg";
+import bedroomPhoto from "../public/livingroom1.jpg";
 
 const partnerLogos = [
   { alt: "Blanco", src: "/partners/blanco.png" },
   { alt: "Bosch", src: "/partners/bosch.png" },
-  { alt: "Caeserstone", src: "/partners/caesterstone.png" },
+  { alt: "Caeserstone", src: "/partners/caeserstone.png" },
   { alt: "Grass", src: "/partners/grass.png" },
   { alt: "Miele", src: "/partners/miele.png" },
   { alt: "Neolith", src: "/partners/neolith.png" },
   { alt: "Niemann", src: "/partners/niemann.png" },
-  { alt: "Osmo", src: "/partners/osmo.png" },
+  { alt: "Osmo", src: "/partners/osmo.webp" },
   { alt: "Rubio Monocoat", src: "/partners/rubio.png" },
   { alt: "Samsung", src: "/partners/samsung.png" },
   { alt: "SenoSA", src: "/partners/senosa.png" },
   { alt: "Siemens", src: "/partners/siemens.png" },
-  { alt: "Silestone", src: "/partners/silestone.png" },
+  { alt: "Silestone", src: "/partners/silestone.jpg" },
   { alt: "smeg", src: "/partners/smeg.png" },
-  { alt: "SnoMaster", src: "/partners/snomaster.webp" },
+  { alt: "SnoMaster", src: "/partners/snomaster.png" },
 ];
 
 export default function Home() {
@@ -63,7 +64,7 @@ export default function Home() {
           </div>
           <div className={styles.whatWeDoImage}>
             <Image
-              src={coverPhoto}
+              src={kitchenPhoto}
               className={styles.gridItemImage}
               alt="What we do"
             />
@@ -75,7 +76,7 @@ export default function Home() {
         >
           <div className={styles.whatWeDoImage}>
             <Image
-              src={coverPhoto}
+              src={bathroomPhoto}
               className={styles.gridItemImage}
               alt="What we do"
             />
@@ -118,7 +119,7 @@ export default function Home() {
           </div>
           <div className={styles.whatWeDoImage}>
             <Image
-              src={coverPhoto}
+              src={bedroomPhoto}
               className={styles.gridItemImage}
               alt="What we do"
             />
