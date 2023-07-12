@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Blockquote } from "@mantine/core";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -64,10 +66,13 @@ export default function Testimonials() {
             {/* <p>{testimonialData.testimonial}</p> */}
             {testimonialData.map((testimonial) => (
               <div className={styles.testimonial} key={testimonial.id}>
-                <p className={styles.testimonialText}>{testimonial.testimonial}</p>
+                {/* <p className={styles.testimonialText}>{testimonial.testimonial}</p>
                 <div className={sharedStyles.spacerXS} />
                 <p className={styles.testimonialClient}>{testimonial.client}</p>
-                <div className={sharedStyles.spacerS} />
+                <div className={sharedStyles.spacerS} /> */}
+                <Blockquote cite={testimonial.client}>
+                  {testimonial.testimonial}
+                </Blockquote>
               </div>
             ))}
           </div>
