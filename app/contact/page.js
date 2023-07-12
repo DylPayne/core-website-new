@@ -5,6 +5,8 @@ import sharedStyles from "../sharedStyles.module.css";
 
 import { useRef, useState } from "react";
 
+import { Metadata } from "next";
+
 import { At } from "tabler-icons-react";
 import { Phone } from "tabler-icons-react";
 import { MapPin } from "tabler-icons-react/dist";
@@ -30,6 +32,12 @@ const client = new ApolloClient({
   uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clibf75tk04k601ulgi3taijw/master",
   cache: new InMemoryCache(),
 });
+
+export const metadata = {
+  title: "Core Interiors | Cape Town",
+  description:
+    "Transform your living space into a stunning oasis with Core Interiors. Our expert team of interior designers offers bespoke solutions to elevate your home or office. Discover our wide range of services, including space planning, furniture selection, and project management. Visit Core Interiors and let us bring your vision to life.",
+};
 
 export default function Contact() {
   const recaptchaRef = useRef(null);
