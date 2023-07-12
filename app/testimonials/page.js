@@ -27,11 +27,11 @@ const query = gql`
   }
 `;
 
-export const metadata = {
-  title: "Core Interiors | Cape Town",
-  description:
-    "Transform your living space into a stunning oasis with Core Interiors. Our expert team of interior designers offers bespoke solutions to elevate your home or office. Discover our wide range of services, including space planning, furniture selection, and project management. Visit Core Interiors and let us bring your vision to life.",
-};
+// export const metadata = {
+//   title: "Core Interiors | Cape Town",
+//   description:
+//     "Transform your living space into a stunning oasis with Core Interiors. Our expert team of interior designers offers bespoke solutions to elevate your home or office. Discover our wide range of services, including space planning, furniture selection, and project management. Visit Core Interiors and let us bring your vision to life.",
+// };
 
 export default function Testimonials() {
   const client = new ApolloClient({
