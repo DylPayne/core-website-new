@@ -109,10 +109,10 @@ export default function RootLayout({ children }) {
           </div>
           {/* CONTACT ------------------------- */}
           <div className={styles.contactContainer}>
-            <Link href="/contact">
+            <Link href="https://www.instagram.com/corekitchens/">
               <InstagramIcon className={styles.contactIcon} />
             </Link>
-            <Link href="/contact">
+            <Link href="https://web.facebook.com/corecabinets/?_rdc=1&_rdr">
               <FacebookIcon className={styles.contactIcon} />
             </Link>
             <Link href="/contact" className={styles.contactUs}>
@@ -141,10 +141,10 @@ export default function RootLayout({ children }) {
             })}
             <div className={styles.contactContainerMobile}>
               <div>
-                <Link href="/contact">
+                <Link href="https://www.instagram.com/corekitchens/">
                   <InstagramIcon className={styles.contactIconMobile} />
                 </Link>
-                <Link href="/contact">
+                <Link href="https://web.facebook.com/corecabinets/?_rdc=1&_rdr">
                   <FacebookIcon className={styles.contactIconMobile} />
                 </Link>
               </div>
