@@ -68,6 +68,12 @@ export default function RootLayout({ children }) {
         sizes="16x16"
         href="/ico/favicon-16x16.png"
       />
+      <link
+        rel="icon"
+        type="images/x-icon"
+        sizes="any"
+        href="/ico/favicon.ico"
+      />
       <link rel="manifest" href="/site.webmanifest" />
       {/* <MantineProvider> */}
       <body className={styles.body}>
