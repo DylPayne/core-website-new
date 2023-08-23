@@ -147,6 +147,24 @@
   border: 5px dashed orange;
 }
 
+.dpFooter {
+  background-color: black;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.dpFooter a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
 /* Responsive design ------------------- */
 
 /* Mobile */

@@ -77,9 +77,6 @@ export default function RootLayout({ children }) {
       <link rel="manifest" href="/site.webmanifest" />
       {/* <MantineProvider> */}
       <body className={styles.body}>
-        <div className={styles.workInProgress}>
-          <p>Site under construction</p>
-        </div>
         <header className={styles.header}>
           {/* LOGO --------------------------- */}
           <div
@@ -193,6 +190,14 @@ export default function RootLayout({ children }) {
               Contact Us
             </Link>
           </div>
+        </div>
+        <div className={styles.dpFooter}>
+          <span>
+            site by{" "}
+            <a target="_blank" href="https://www.dylanpayne.co.za">
+              Dylan Payne
+            </a>
+          </span>
         </div>
       </body>
       {/* </MantineProvider> */}
