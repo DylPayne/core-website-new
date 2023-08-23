@@ -4,7 +4,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
