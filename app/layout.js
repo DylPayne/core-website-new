@@ -22,6 +22,8 @@ import { MantineProvider } from "@mantine/core";
 
 import { createGetInitialProps } from "@mantine/next";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const links = [
   { label: "About", link: "/about" },
   { label: "Our Work", link: "/portfolio" },
@@ -151,6 +153,7 @@ export default function RootLayout({ children }) {
           </ul>
         </div>
         {children}
+        <Analytics />
         <div className={styles.footer}>
           <div
             className={styles.logoContainer}
