@@ -72,7 +72,7 @@ export default function Portfolio() {
       .query({
         query: gql`
           query Portfolios {
-            portfolios {
+            portfolios(orderBy: publishedAt_DESC) {
               id
               name
               slug

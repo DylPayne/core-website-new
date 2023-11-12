@@ -19,7 +19,7 @@ import {
 
 const query = gql`
   query Testimonials {
-    testimonials {
+    testimonials(orderBy: publishedAt_DESC) {
       id
       client
       testimonial

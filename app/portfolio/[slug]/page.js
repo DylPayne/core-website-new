@@ -112,16 +112,8 @@ export default function PortfolioDetail({ params }) {
             <div className={styles.galleryParent}>
               {jobData.images.map((image) => {
                 return (
-                  <div className={styles.galleryImageParent} key={image.url}>
-                    <Image
-                      src={image.url}
-                      alt={jobData.name}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className={styles.galleryImage}
-                      key={jobData.name}
-                    />
+                  <div className={styles.galleryImage} key={image.url}>
+                    <img src={image.url} alt={jobData.name} />
                   </div>
                 );
               })}
