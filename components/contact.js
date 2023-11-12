@@ -10,7 +10,7 @@ export default function Contact() {
           <div className={styles.spacerXS} />
           <p>Get in touch to remagine your home</p>
           <div className={styles.spacerXS} />
-          <Link href="/portfolio" className={styles.workLink}>
+          <Link href="/contact" className={styles.workLink}>
             Contact
           </Link>
         </div>

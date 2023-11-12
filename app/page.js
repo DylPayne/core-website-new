@@ -9,7 +9,7 @@ import Contact from "@/components/contact";
 
 import kitchenPhoto from "../public/kitchen1.jpeg";
 import bathroomPhoto from "../public/bathroom1.jpeg";
-import bedroomPhoto from "../public/livingroom1.jpg";
+import bedroomPhoto from "../public/bedroom1.jpg";
 
 const partnerLogos = [
   { alt: "Blanco", src: "/partners/blanco.png" },
