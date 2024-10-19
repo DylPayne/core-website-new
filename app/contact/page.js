@@ -12,7 +12,7 @@ import { Phone } from "tabler-icons-react";
 import { MapPin } from "tabler-icons-react/dist";
 import { Clock } from "tabler-icons-react/dist";
 import { Paperclip } from "tabler-icons-react/dist";
-import { Face } from "@mui/icons-material";
+import { Face, PhoneIphone, PhonelinkRingOutlined, Smartphone } from "@mui/icons-material";
 
 import { TextInput, Textarea, Button, Alert } from "@mantine/core";
 import { useForm } from "@mantine/form";
@@ -114,6 +114,13 @@ export default function Contact() {
               <div className={styles.formInfoRow}>
                 <Phone size={24} strokeWidth={1} color={"black"} />
                 <div>
+                  <p className={styles.formInfoRowLabel}>Landline</p>
+                  <p>+27 21 712 6147</p>
+                </div>
+              </div>
+              <div className={styles.formInfoRow}>
+                <Phone size={24} strokeWidth={1} color={"black"} />
+                <div>
                   <p className={styles.formInfoRowLabel}>Phone</p>
                   <p>+27 79 316 4345</p>
                 </div>
@@ -122,7 +129,7 @@ export default function Contact() {
                 <MapPin size={24} strokeWidth={1} color={"black"} />
                 <div>
                   <p className={styles.formInfoRowLabel}>Address</p>
-                  <p>29 Estmil Road, Diep Rivier</p>
+                  <p>10 Estmil Road, Diep Rivier</p>
                 </div>
               </div>
               <div className={styles.formInfoRow}>
